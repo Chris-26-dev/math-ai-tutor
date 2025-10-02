@@ -17,10 +17,11 @@ Math Quest is an interactive web app that generates AI-powered math word problem
 
 ## Tech Stack
 
-- **Frontend:** Next.js 14 (React), Tailwind CSS, Lucide Icons
+- **Frontend:** Next.js 15.5.4 (React 19.1.0), Tailwind CSS 4.1.14, Lucide React 0.544.0
 - **Backend:** Next.js API routes
 - **Database:** Supabase (PostgreSQL)
 - **AI:** Google Generative AI (Gemini 2.0)
+- **TypeScript & Linting:** TypeScript 5, ESLint 9, @types/node 20, @types/react 19, @types/react-dom 19
 - **Hosting:** Vercel / Supabase
 
 ---
