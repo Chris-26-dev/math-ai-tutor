@@ -24,7 +24,7 @@ export default function HomePage() {
   const [loadingProblem, setLoadingProblem] = useState(false);
   const [loadingSubmit, setLoadingSubmit] = useState(false);
   const [hasAnswered, setHasAnswered] = useState(false);
-  const [highlightNewChallenge, setHighlightNewChallenge] = useState(true); // ✅ NEW
+  const [highlightNewChallenge, setHighlightNewChallenge] = useState(true);
 
   // Generate new problem
   const generateProblem = async () => {
@@ -33,7 +33,7 @@ export default function HomePage() {
     setAnswer("");
     setCorrectAnswer(null);
     setHasAnswered(false);
-    setHighlightNewChallenge(false); // stop pulsing once clicked
+    setHighlightNewChallenge(false);
 
     try {
       const res = await fetch("/api/generate-problem", { method: "POST" });
@@ -53,7 +53,6 @@ export default function HomePage() {
     }
   };
 
-  // Submit answer
   const submitAnswer = async () => {
     if (!sessionId) return;
     setLoadingSubmit(true);
@@ -76,7 +75,7 @@ export default function HomePage() {
           setCorrectAnswer(data.finalAnswer);
         }
         setHasAnswered(true);
-        setHighlightNewChallenge(true); // ✅ pulse again after answered
+        setHighlightNewChallenge(true);
       } else if ("error" in data) {
         setFeedback("⚠️ " + data.error);
       }
@@ -96,7 +95,7 @@ export default function HomePage() {
         Math Quest
       </h1>
       <p className="text-center text-gray-600">
-        Solve fun problems, earn stars, and become a{" "}
+        Solve fun problems and become a{" "}
         <span className="font-semibold">Math Champion!</span>
       </p>
 
