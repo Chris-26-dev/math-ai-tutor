@@ -55,7 +55,7 @@ Setup & Installation
 NEXT_PUBLIC_SUPABASE_URL=https://luhasaoyljxvomplhspi.supabase.co
 NEXT_PUBLIC_SUPABASE_ANON_KEY=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imx1aGFzYW95bGp4dm9tcGxoc3BpIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTkzNzMyNzUsImV4cCI6MjA3NDk0OTI3NX0.uIVJTWvZFo28gPmWDa9fXTJFJblEoDOWO9eDjWnAaTU
 
-GEMINI_API_KEY=AIzaSyAHZQX3IrNirIE1322eSUp_zBQUX14-uT0
+GEMINI_API_KEY=your-google-gemini-api-key
 
 4. Run the development server:
 
